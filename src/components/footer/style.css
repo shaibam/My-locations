@@ -1,6 +1,7 @@
 .footer {
     display: flex;
     flex-direction: row;
+    align-self: flex-end;
 }
 .link {
     margin:5px;    

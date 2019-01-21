@@ -1,14 +1,13 @@
 import React, { Component } from 'react';
-import style from './style.css';
 
-class Title extends Component {
+class Locations extends Component {
     render() {
         return (
             <div>
-                {this.props.children}
+                Locations
             </div>
         );
     }
 }
 
-export default Title;
+export default Locations;
