@@ -7,8 +7,15 @@ import Body from "./components/body/body";
 import TitleRoute from "./routes/titleRoute";
 import FooterRoute from "./routes/footerRoute";
 import BodyRoute from "./routes/bodyRoute";
+import { connect } from 'react-redux';
+
+const mapStateToProps = state => {
+  return { 
+  }
+}
 
 class App extends Component {
+  
   render() {
     return (
       <div className="App">
@@ -25,4 +32,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default connect(mapStateToProps)(App);

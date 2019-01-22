@@ -1,0 +1,10 @@
+#map {
+  display: block;
+  width: 50%;
+  height: 50%;
+}
+
+.locations {
+    display: flex;
+    justify-content: space-between;
+}
