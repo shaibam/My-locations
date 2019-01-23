@@ -1,6 +1,12 @@
+:root {
+    --background-main:#282c34;
+    --background-item-link:#4b5261;
+    --background-item-hover:#7c825e;
+    --background-item-selected:#599fa2;
+}
 .App {
   text-align: center;
-  background-color: #282c34;
+  background-color: var(--background-main);
   min-height: 100vh;
   display: grid;
   grid-template-rows: 70px 70px auto 70px;

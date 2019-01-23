@@ -7,26 +7,36 @@ import Body from "./components/body/body";
 import TitleRoute from "./routes/titleRoute";
 import FooterRoute from "./routes/footerRoute";
 import BodyRoute from "./routes/bodyRoute";
-import { connect } from 'react-redux';
+import { DbInit } from "./db/db";
+import { connect } from "react-redux";
 
 const mapStateToProps = state => {
-  return { 
-  }
-}
+  return {};
+};
 
 class App extends Component {
-  
+  constructor(props) {
+    super(props);
+    this.state = { ready: false };
+    let dbInit = new DbInit();
+    dbInit.onReady(() => this.setState({ ready: true }));
+  }
+
   render() {
     return (
       <div className="App">
         <header className="App-header">My Locations App</header>
-        <Router>
-          <Fragment>
-            <TitleRoute />
-            <BodyRoute/>
-            <FooterRoute />
-          </Fragment>
-        </Router>       
+        {this.state.ready ? (
+          <Router>
+            <Fragment>
+              <TitleRoute />
+              <BodyRoute />
+              <FooterRoute />
+            </Fragment>
+          </Router>
+        ) : (
+          ""
+        )}
       </div>
     );
   }

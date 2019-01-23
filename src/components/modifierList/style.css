@@ -1,0 +1,9 @@
+li {
+    cursor: pointer;
+}
+li:hover span {
+    background-color:var(--background-item-hover);
+}
+li.selected span{
+    background-color:var(--background-item-selected); 
+}

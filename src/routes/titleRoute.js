@@ -19,12 +19,12 @@ class TitleRoute extends Component {
             <Route
               exact
               path="/Categories"
-              render={() => <Title>Categories manager</Title>}
+              render={() => <Title>Categories manager - Add, remove and edit categories (Editing will be auto-saved) </Title>}
             />
             <Route
               exact
               path="/Locations"
-              render={() => <Title>Locations manager</Title>}
+              render={() => <Title>Locations manager - Add, remove and edit locations (Editing will be auto-saved) <br /> click on the map to view a location details </Title>}
             />
           </Fragment>
 

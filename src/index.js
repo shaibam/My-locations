@@ -8,7 +8,7 @@ import { Provider } from "react-redux";
 import allReducers from "./redux/reducers";
 
 //const store = createStore(allReducers,{},applyMiddleware(thunk),window.devToolsExtension && window.devToolsExtension())
-const store = createStore(
+export const store = createStore(
   allReducers,
   {},
   window.devToolsExtension && window.devToolsExtension()

@@ -1,14 +1,16 @@
 .modifier-button {
     --button-dimentions:20px;
     cursor: pointer;
-    background-color: #4b5261;
+    background-color:var(--background-item-link);
     width: var(--button-dimentions);
     height: var(--button-dimentions);;
     line-height: 16px;
     display: inline-block;
+    margin-left: 3px;
+    margin-right: 3px;
 }
 .modifier-button:hover {
-    background-color: #7c825e;
+    background-color: var(--background-item-hover);
 }
 .modifier-button img {
     height:var(--button-dimentions);;

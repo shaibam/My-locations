@@ -1,11 +1,11 @@
 import React, { Component } from "react";
-import Add from "./images/add.png";
-import Remove from "./images/remove.png";
-import Edit from "./images/edit.png";
+import ADD from "./images/add.png";
+import REMOVE  from "./images/remove.png";
+import EDIT from "./images/edit.png";
 import style from "./style.css"
 class ModifierButton extends Component {
   static get Types() {
-    return { Add, Remove, Edit };
+    return { ADD, REMOVE, EDIT };
   }
   render() {
     const { type } = { ...this.props };

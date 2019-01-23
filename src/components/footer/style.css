@@ -1,3 +1,4 @@
+
 .footer {
     display: flex;
     flex-direction: row;
@@ -8,16 +9,16 @@
     margin:5px;    
     padding: 5px 10px;
     line-height: 12px;
-    background-color: #4b5261;
+    background-color:var(--background-item-link);
     height: 22px;
 }
 
 .link:hover {
-    background-color: #7c825e;
+    background-color: var(--background-item-hover);
 }
 
 .link.selected {
-    background-color: #599fa2;
+    background-color:  var(--background-item-selected);
 }
 
 img {
