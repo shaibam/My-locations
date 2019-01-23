@@ -1,6 +1,22 @@
 My-locations (incomplete version)
 
+נשאר למחוק ולערוך location.
+ניתן לייצר/לערוך ולמחוק קטגוריות.
+
+ניתן ללחוץ על מפה ולהוסיף מיקום.
+
+יש פה שימוש ב router וב redux, במקום LocalStorage השתמשתי ב indexeddb כי נראה יותר מתאים למבנה הנתונים שבמטלה.
+
+יש שימוש ב flex,grid וב css vars
+
+ועוד דברים טובים ויפים
+
+לא השתמשתי ב googlemaps כי הם התחילו לגבות 200$ לחודש. כן השתמשתי במנגנון מפות חינמי אחר, ובמאגר מיקומים חינמי.
+
+
+
 npm install // to install all dependencies
+
 npm start; // to start the app on your local host
 
 ## Available Scripts
