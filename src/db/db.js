@@ -5,8 +5,8 @@ export class DbInit {
 
   constructor() {
     db.version(1).stores({
-      categories: "name",
-      locations: "name,addres,coordinates,category"
+      categories: "++id,name",
+      locations: "++id,name,addres,coordinates,category"
     });
 
     db.open().then(() => {

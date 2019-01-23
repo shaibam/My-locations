@@ -1,6 +1,10 @@
 .locations {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between;   
+}
+
+.location-list {
+  width:50%;
 }
 
 .location-details {

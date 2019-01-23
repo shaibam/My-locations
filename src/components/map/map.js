@@ -26,7 +26,7 @@ class Map extends Component {
         }
       )
       .addTo(this.mymap);
-
+  
     this.mymap.on("click", e => {
       const lat = e.latlng.lat;
       const lon = e.latlng.lng;
@@ -37,9 +37,9 @@ class Map extends Component {
         .then(response => {
           return response.json();
         })
-        .then(data => {          
+        .then(data => {                     
           window["L"].marker([lat, lon]).addTo(this.mymap);
-          this.props.locationSelected(data);
+          this.props.locationSelected(data);          
         });
     });
   }
@@ -49,4 +49,7 @@ class Map extends Component {
   }
 }
 
+Map.defaultProps = {
+  locationSelected:()=>{}
+}
 export default Map;
